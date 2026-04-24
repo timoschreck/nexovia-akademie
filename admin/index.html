@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – NEXOVIA Akademie</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <img src="../assets/nexovia-logo.jpg" alt="Nexovia Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../onboarding/index.html">Onboarding</a></li>
+        <li><a href="../schulungen/index.html">Schulungen</a></li>
+        <li><a href="../prozesse/index.html">Prozesse</a></li>
+        <li><a href="../faq/index.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Admin‑Dashboard</h1>
+    <p>Verwalten Sie Benutzer, Inhalte und Aktivitäten der NEXOVIA Akademie.</p>
+    <section class="card">
+      <h2>Mitarbeiter verwalten</h2>
+      <p>Legen Sie neue Benutzer an, versenden Sie Zugangsdaten per E‑Mail und vergeben Sie Rollen (z. B. Admin).</p>
+      <form>
+        <div style="margin-bottom:10px;">
+          <label for="newEmail">E‑Mail Adresse</label><br>
+          <input type="email" id="newEmail" style="width:100%;padding:8px;border-radius:var(--radius);border:none;">
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="role">Rolle</label><br>
+          <select id="role" style="width:100%;padding:8px;border-radius:var(--radius);border:none;">
+            <option>Vertriebspartner</option>
+            <option>Admin</option>
+          </select>
+        </div>
+        <button class="primary" type="submit" onclick="event.preventDefault();alert('Funktion nicht implementiert – Backend erforderlich.');">Benutzer anlegen</button>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Logins &amp; Aktivität</h2>
+      <p>Überprüfen Sie, wann sich Nutzer zuletzt angemeldet haben, welche Seiten sie besucht haben und wie lange sie eingeloggt waren.</p>
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:8px;border-bottom:1px solid var(--card-color);">E‑Mail</th>
+            <th style="text-align:left;padding:8px;border-bottom:1px solid var(--card-color);">Letzter Login</th>
+            <th style="text-align:left;padding:8px;border-bottom:1px solid var(--card-color);">Angesehene Inhalte</th>
+            <th style="text-align:left;padding:8px;border-bottom:1px solid var(--card-color);">Dauer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">vp1@example.com</td>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">23.04.2026</td>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">Onboarding, Videos</td>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">45 Min</td>
+          </tr>
+          <tr>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">vp2@example.com</td>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">21.04.2026</td>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">Prozesse</td>
+            <td style="padding:8px;border-bottom:1px solid var(--card-color);">30 Min</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="card">
+      <h2>Chats &amp; Forum</h2>
+      <p>Erstellen Sie themenspezifische Chats oder Foren, um den Austausch unter den Vertriebspartnern zu fördern. Eine Integration mit WhatsApp oder Slack kann über Drittanbieter umgesetzt werden.</p>
+    </section>
+    <section class="card">
+      <h2>Events &amp; Termine</h2>
+      <p>Planen Sie Veranstaltungen und Termine. Diese werden auf der Startseite der Akademie angezeigt.</p>
+      <ul>
+        <li>30.04.2026 – Webinar zur CRM‑Nutzung</li>
+        <li>15.05.2026 – Präsenzschulung Wärmepumpen</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>News</h2>
+      <p>Veröffentlichen Sie Neuigkeiten und externe Artikel. Diese erscheinen mit Vorschau auf der Startseite.</p>
+      <ul>
+        <li><strong>Neuer Fördertopf für PV‑Anlagen</strong> – Mehr Infos im internen Blog.</li>
+        <li><strong>Hersteller Video: Wärmepumpen erklärt</strong> – <a href="#" style="color:var(--gradient-start);text-decoration:underline;">Ansehen</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>NEXOVIA Akademie © 2026</footer>
+</body>
+</html>
