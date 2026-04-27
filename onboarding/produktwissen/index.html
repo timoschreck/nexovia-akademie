@@ -20,18 +20,33 @@
         </ul>
     </nav>
 </header>
+
 <main>
     <h1>Produktwissen</h1>
-    <p>Vertiefen Sie Ihr Wissen über unsere Produkte durch diese interaktiven Schulungsunterlagen. Die Präsentationen werden direkt im Browser angezeigt.</p>
-    <div class="pdf-container">
-        <h2>Heizungslexikon A‑Z</h2>
+    <p>Klicken Sie auf eine Überschrift, um die jeweilige Präsentation anzuzeigen. So bleiben die Dokumente nur eingebettet sichtbar und können nicht direkt heruntergeladen werden.</p>
+
+    <div class="pdf-section">
+      <h2><a href="javascript:void(0)" onclick="toggle('heizungslexikon')">Heizungslexikon A‑Z</a></h2>
+      <div id="heizungslexikon" style="display:none;">
         <iframe src="../../assets/productwissen/Heizungslexikon_A-Z.pdf" width="100%" height="600px"></iframe>
+      </div>
     </div>
-    <div class="pdf-container">
-        <h2>HZG Gesetz Neu</h2>
+
+    <div class="pdf-section">
+      <h2><a href="javascript:void(0)" onclick="toggle('hzg')">HZG Gesetz Neu</a></h2>
+      <div id="hzg" style="display:none;">
         <iframe src="../../assets/productwissen/HZG_Gesetz_Neu.pdf" width="100%" height="600px"></iframe>
+      </div>
     </div>
 </main>
+
 <footer>NEXOVIA Akademie © 2026</footer>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+}
+</script>
 </body>
 </html>
