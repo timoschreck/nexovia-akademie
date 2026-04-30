@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOX ESS - Datenblätter und Tools</title>
+    <!-- Link to the global stylesheet. Paths are relative to this file located in
+         schulungen/datenblaetter-und-tools/fox-ess/index.html -->
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo links back to the homepage -->
+        <a href="../../../index.html"><img src="../../../assets/nexovia-logo.jpg" alt="NEXOVIA Logo" class="logo"></a>
+        <!-- Primary navigation replicating the Onboarding structure -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../onboarding/index.html">Onboarding</a></li>
+                <li><a href="../../index.html">Schulungen</a></li>
+                <li><a href="../../../prozesse/index.html">Prozesse</a></li>
+                <li><a href="../../../faq/index.html">FAQ</a></li>
+                <li><a href="../../../admin/index.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>FOX ESS</h1>
+        <p>Datenblätter und Hilfsmittel für FOX&nbsp;ESS Wechselrichter, Batterien und Wallboxen.</p>
+        <!-- Each PDF is presented in its own collapsible section. Clicking the heading toggles visibility. -->
+        <div class="pdf-section">
+            <h2><a href="javascript:void(0)" onclick="toggle('eq5000')">Batterie&nbsp;EQ5000&nbsp;Datasheet</a></h2>
+            <div id="eq5000" style="display:none;">
+                <iframe src="FOX%20ESS_Batterie-EQ5000-Datasheet-V1.1-20250320.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+        <div class="pdf-section">
+            <h2><a href="javascript:void(0)" onclick="toggle('h3smart')">WR&nbsp;H3&nbsp;Smart&nbsp;Datasheet</a></h2>
+            <div id="h3smart" style="display:none;">
+                <iframe src="FOX%20ESS_WR-H3-Smart-Datasheet-V1.3-20250307.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+        <div class="pdf-section">
+            <h2><a href="javascript:void(0)" onclick="toggle('h3pro')">WR&nbsp;H3&nbsp;Pro&nbsp;Datasheet</a></h2>
+            <div id="h3pro" style="display:none;">
+                <iframe src="FOXX%20ESS_WR-H3-Pro-Datenblatt-V2.1-20250326.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+        <div class="pdf-section">
+            <h2><a href="javascript:void(0)" onclick="toggle('wallbox')">Wallbox&nbsp;A&nbsp;V2.0&nbsp;EV&nbsp;Charger&nbsp;Plug&nbsp;Datasheet</a></h2>
+            <div id="wallbox" style="display:none;">
+                <iframe src="FOXX%20ESS_Wallbox-A-V2.0-EV-Charger-Plug-V1.3-20241206.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;&nbsp;2024&nbsp;NEXOVIA&nbsp;Akademie</p>
+    </footer>
+    <script>
+    // Simple toggle function to show or hide PDF sections. When the heading is clicked,
+    // this function toggles the display property between 'none' and 'block'.
+    function toggle(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+    }
+    </script>
+</body>
+</html>
